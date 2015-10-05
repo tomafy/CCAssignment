@@ -1,5 +1,15 @@
 package hw2;
-
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode parent;
+    int size;
+    TreeNode(int x) {
+        val = x;
+        size=1;
+    }
+}
 public class Solution42 {
 	public TreeNode createMinimaltree(int[] order, int start, int end) {
 		//The root of the minimal height tree must be the mid of the array
